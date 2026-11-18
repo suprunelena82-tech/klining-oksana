@@ -22,7 +22,7 @@
   "@type": "CleaningService",
   "name": "Чисто з Оксаною",
   "description": "Підтримуюче, генеральне прибирання та прибирання після ремонту.",
-  "telephone": "+380000000000",
+  "telephone": "+380976891326",
   "areaServed": "Вишневе",
   "priceRange": "₴₴"
 }
@@ -305,7 +305,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .steps{display:grid;gap:24px;counter-reset:s}
 @media (min-width:800px){.steps{grid-template-columns:repeat(4,1fr)}}
 .step{position:relative;padding:28px 24px;border-radius:var(--radius);background:var(--white);box-shadow:var(--shadow);counter-increment:s}
-.step::before{
+.step__ico{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.step__ico svg{width:52px;height:52px;padding:13px;border-radius:16px;background:var(--mint);color:var(--teal-dark)}.step__ico b{font-family:"Playfair Display",serif;font-size:15px;color:var(--ink-soft);opacity:.45;letter-spacing:.08em}.step::before{display:none!important;
   content:counter(s);display:grid;place-items:center;width:48px;height:48px;border-radius:50%;
   background:var(--coral);color:#fff;font-family:'Playfair Display',serif;font-weight:700;font-size:22px;margin-bottom:16px;
 }
@@ -327,6 +327,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 
 /* Reviews */
 .demo-badge{display:inline-flex;align-items:center;margin-top:8px;padding:6px 14px;border-radius:99px;border:1px dashed var(--teal);background:#fff;color:var(--teal-dark);font-size:13px;font-weight:700}
+.why-grid{display:grid;gap:20px}@media(min-width:600px){.why-grid{grid-template-columns:repeat(2,1fr)}}@media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}.why{padding:28px 24px;border-radius:var(--radius);background:#fff;box-shadow:var(--shadow);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}.why:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}.why__ico{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;background:var(--mint);color:var(--teal-dark);margin-bottom:18px}.why__ico svg{width:28px;height:28px}.why h3{font-size:19px;margin-bottom:8px}.why p{color:var(--ink-soft);font-size:15px}
 .rev-grid{display:grid;gap:24px}
 @media (min-width:900px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:899px){
@@ -433,7 +434,7 @@ img.is-broken{display:none}
       <a href="#faq">Питання</a>
     </nav>
     <a href="#order" class="btn btn--primary header__cta">Отримати розрахунок</a>
-    <a href="tel:+380000000000" class="header__phone" data-phone-link aria-label="Зателефонувати">
+    <a href="tel:+380976891326" class="header__phone" data-phone-link aria-label="Зателефонувати">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
   </div>
@@ -602,10 +603,10 @@ img.is-broken{display:none}
       <h2>Чотири кроки — і <em>чисто</em></h2>
     </div>
     <div class="steps">
-      <div class="step reveal"><h3>Заявка</h3><p>Залиште номер або напишіть у месенджер — відповім протягом 15 хвилин.</p></div>
-      <div class="step reveal" style="--d:.08s"><h3>Розрахунок</h3><p>Уточню деталі й назву остаточну ціну, яка не зміниться.</p></div>
-      <div class="step reveal" style="--d:.16s"><h3>Прибирання</h3><p>Приїжджаю в зручний час зі своїми засобами та технікою.</p></div>
-      <div class="step reveal" style="--d:.24s"><h3>Прийом роботи</h3><p>Ви перевіряєте результат. Щось не так — виправлю безкоштовно.</p></div>
+      <div class="step reveal"><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg><b>01</b></span><h3>Заявка</h3><p>Залиште номер або напишіть у месенджер — відповім протягом 15 хвилин.</p></div>
+      <div class="step reveal" style="--d:.08s"><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></svg><b>02</b></span><h3>Розрахунок</h3><p>Уточню деталі й назву остаточну ціну, яка не зміниться.</p></div>
+      <div class="step reveal" style="--d:.16s"><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M18.5 15l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg><b>03</b></span><h3>Прибирання</h3><p>Приїжджаю в зручний час зі своїми засобами та технікою.</p></div>
+      <div class="step reveal" style="--d:.24s"><span class="step__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-3 7.6-7 9.5-4-1.9-7-5.1-7-9.5V6z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg><b>04</b></span><h3>Прийом роботи</h3><p>Ви перевіряєте результат. Щось не так — виправлю безкоштовно.</p></div>
     </div>
   </div>
 </section>
@@ -627,27 +628,10 @@ img.is-broken{display:none}
 <section class="section section--mint" id="reviews">
   <div class="container">
     <div class="section-head section-head--center reveal">
-      <span class="eyebrow">Відгуки</span>
-      <h2>Що кажуть <em>клієнти</em></h2>
-      <span class="demo-badge">Демо-відгуки: приклад оформлення блоку</span>
+      <span class="eyebrow">Чому я</span>
+      <h2>Чому обирають <em>мене</em></h2>
     </div>
-    <div class="rev-grid reveal">
-        <figure class="rev">
-          <div class="rev__top"><div class="rev__stars" role="img" aria-label="Оцінка 5 із 5"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg></div><span class="rev__tag">Приклад</span></div>
-          <blockquote>Замовляла генеральне перед приїздом батьків. Жодного різкого запаху, а плитка у ванній нарешті сяє. Ціна була саме така, як домовлялись, без доплат.</blockquote>
-          <figcaption><span class="rev__ava" aria-hidden="true">М</span><span><b>Марина</b><small>Генеральне прибирання · 2-кімнатна квартира</small></span></figcaption>
-        </figure>
-        <figure class="rev">
-          <div class="rev__top"><div class="rev__stars" role="img" aria-label="Оцінка 5 із 5"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg></div><span class="rev__tag">Приклад</span></div>
-          <blockquote>Після ремонту пилюка була навіть у шафах. Усе прибрали за один день, зняли плівку з вікон і надіслали фото результату. Дуже зручно.</blockquote>
-          <figcaption><span class="rev__ava" aria-hidden="true">А</span><span><b>Андрій</b><small>Прибирання після ремонту</small></span></figcaption>
-        </figure>
-        <figure class="rev">
-          <div class="rev__top"><div class="rev__stars" role="img" aria-label="Оцінка 5 із 5"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg></div><span class="rev__tag">Приклад</span></div>
-          <blockquote>Беру прибирання раз на тиждень. Приходять вчасно, працюють акуратно. Вихідні тепер для себе, а не для швабри.</blockquote>
-          <figcaption><span class="rev__ava" aria-hidden="true">Н</span><span><b>Наталія</b><small>Підтримуюче прибирання · щотижня</small></span></figcaption>
-        </figure>
-    </div>
+    <div class="why-grid reveal"><div class="why"><span class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5V5a1 1 0 0 1 1-1h7.5L20 11.5 12.5 19z"/><path d="M8.5 8.5h.01"/></svg></span><h3>Фіксована ціна</h3><p>Називаю остаточну суму до початку роботи. Жодних доплат «на місці».</p></div><div class="why"><span class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>Відповідь за 15 хвилин</h3><p>Пишете чи телефонуєте — відповідаю швидко й без довгих очікувань.</p></div><div class="why"><span class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l2 2v11a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V9l2-2z"/><path d="M7 13h10"/></svg></span><h3>Свої засоби й техніка</h3><p>Приїжджаю з усім потрібним. Підбираю безпечні засоби для дітей і тварин.</p></div><div class="why"><span class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-3 7.6-7 9.5-4-1.9-7-5.1-7-9.5V6z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg></span><h3>Виправлю безкоштовно</h3><p>Помітили недогляд? Повернуся й доведу до ідеалу — без додаткової оплати.</p></div></div>
   </div>
 </section>
 
@@ -676,7 +660,7 @@ img.is-broken{display:none}
       <h2>Забронюйте дату <em style="color:#8be5d8">вже сьогодні</em></h2>
       <p class="lead">Залиште контакти — передзвоню або напишу в зручний месенджер протягом 15 хвилин (з 8:00 до 21:00).</p>
       <div class="contacts">
-        <a href="tel:+380000000000" data-phone-link><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span data-phone-text>+38 (000) 000-00-00</span></a>
+        <a href="tel:+380976891326" data-phone-link><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span data-phone-text>+38 (097) 689-13-26</span></a>
         <a href="https://t.me/Olena_zhm" target="_blank" rel="noopener" data-tg-link><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg></span><span>Telegram</span></a>
       </div>
     </div>
@@ -711,15 +695,15 @@ img.is-broken{display:none}
 </footer>
 
 <div class="mbar" id="mbar">
-  <a href="tel:+380000000000" class="btn btn--ghost" data-phone-link>Зателефонувати</a>
+  <a href="tel:+380976891326" class="btn btn--ghost" data-phone-link>Зателефонувати</a>
   <a href="#calc" class="btn btn--primary">Порахувати ціну</a>
 </div>
 
 <script>
 /* ================= CONFIG: змініть під себе ================= */
 const CONFIG = {
-  phone: "+380000000000",             // формат для посилань, без пробілів
-  phoneDisplay: "+38 (000) 000-00-00",// як показувати на сайті
+  phone: "+380976891326",             // формат для посилань, без пробілів
+  phoneDisplay: "+38 (097) 689-13-26",// як показувати на сайті
   telegram: "Olena_zhm",          // нік у Telegram без @
   city: "Вишневе",
   prices: {
